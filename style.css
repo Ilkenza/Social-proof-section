@@ -1,0 +1,206 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: hsl(0deg, 0%, 100%);
+  background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+  height: 100vh;
+  background-size: auto, 70%;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1250px;
+  align-items: center;
+}
+.main .all {
+  width: 1250px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.main .all .c-txt-rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .all .c-txt-rate .text {
+  width: 445px;
+  height: 243px;
+}
+.main .all .c-txt-rate .text h1 {
+  color: hsl(300deg, 43%, 22%);
+  font-size: 54px;
+  margin: 0px;
+}
+.main .all .c-txt-rate .text p {
+  font-size: 18px;
+  color: hsl(303deg, 10%, 53%);
+}
+.main .all .c-txt-rate .all-rate {
+  width: 540px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+.main .all .c-txt-rate .all-rate .rate {
+  display: flex;
+  align-items: center;
+  background: hsl(300deg, 24%, 96%);
+  border-radius: 10px;
+  width: 445px;
+  justify-content: space-evenly;
+}
+.main .all .c-txt-rate .all-rate .rate h3 {
+  color: hsl(300deg, 43%, 22%);
+}
+.main .all .c-txt-rate .all-rate .second-rate {
+  margin-left: 47.5px;
+}
+.main .all .c-txt-rate .all-rate .third-rate {
+  margin-left: 95px;
+}
+.main .all .all-card {
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .all .all-card .first-card p {
+  font-size: 16px;
+}
+.main .all .all-card .second-card {
+  margin-top: 40px;
+}
+.main .all .all-card .second-card p {
+  font-size: 17px;
+}
+.main .all .all-card .third-card {
+  margin-top: 80px;
+}
+.main .all .all-card .third-card p {
+  font-size: 16px;
+}
+.main .all .all-card .card {
+  width: 280px;
+  background: hsl(300deg, 43%, 22%);
+  border-radius: 10px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+.main .all .all-card .card .img-txt {
+  display: flex;
+  align-items: center;
+}
+.main .all .all-card .card .img-txt img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.main .all .all-card .card .img-txt .txt {
+  margin-left: 20px;
+}
+.main .all .all-card .card .img-txt .txt .cs {
+  margin: 0;
+  font-size: 18px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 5px;
+}
+.main .all .all-card .card .img-txt .txt .css {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+  color: hsl(333deg, 80%, 67%);
+}
+.main .all .all-card .card p {
+  color: hsl(0deg, 0%, 100%);
+  line-height: 25px;
+}
+
+@media (max-width: 1250px) {
+  body {
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-size: auto, 100%;
+    height: 150vh;
+  }
+  body .main {
+    align-items: center;
+  }
+  body .main .all {
+    height: 1327px;
+    width: 550px;
+  }
+  body .main .all .c-txt-rate {
+    flex-direction: column;
+  }
+  body .main .all .c-txt-rate .text {
+    text-align: center;
+    width: 384px;
+  }
+  body .main .all .c-txt-rate .text h1 {
+    font-size: 43px;
+  }
+  body .main .all .c-txt-rate .text p {
+    font-size: 21px;
+  }
+  body .main .all .c-txt-rate .all-rate {
+    margin: 20px 0px;
+    align-items: center;
+  }
+  body .main .all .c-txt-rate .all-rate .second-rate, body .main .all .c-txt-rate .all-rate .third-rate {
+    margin: 0;
+  }
+  body .main .all .all-card {
+    height: 768px;
+    flex-direction: column;
+  }
+  body .main .all .all-card .first-card, body .main .all .all-card .second-card, body .main .all .all-card .third-card {
+    margin-top: 20px;
+  }
+  body .main .attribution {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  body .main .attribution a {
+    color: hsl(228deg, 45%, 44%);
+  }
+}
+@media (max-width: 600px) {
+  body .main {
+    width: 100%;
+  }
+  body .main .all {
+    width: 100%;
+  }
+  body .main .all .c-txt-rate .all-rate {
+    height: 330px;
+    width: 100%;
+  }
+  body .main .all .c-txt-rate .all-rate .rate {
+    flex-direction: column;
+    padding-top: 20px;
+    width: 90%;
+  }
+}
+@media (max-width: 380px) {
+  body .main .all .c-txt-rate .text {
+    width: 100%;
+  }
+  body .main .all .all-card .card {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
